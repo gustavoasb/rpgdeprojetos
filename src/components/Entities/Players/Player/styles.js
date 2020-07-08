@@ -4,11 +4,16 @@ export const PlayerContainer = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    color: #fff;
-    -webkit-text-stroke: 1px black;
+    overflow: hidden;
 `
 
 export const PlayerImage = styled.img`
-    height: 100%;
+    height: calc(100% - 2rem);
+`
 
+export const PlayerName = styled.div`
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    -webkit-text-stroke: 1px black;
 `

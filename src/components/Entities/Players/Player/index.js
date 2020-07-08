@@ -1,10 +1,10 @@
 import React from 'react'
-import { PlayerContainer, PlayerImage } from './styles'
+import { PlayerContainer, PlayerImage, PlayerName } from './styles'
 
 export default function Player({name, img}){
     return(
         <PlayerContainer>
-            {name}
+            <PlayerName>{name}</PlayerName>
             <PlayerImage src={img} alt={name} />
         </PlayerContainer>
     )
