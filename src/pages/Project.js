@@ -3,6 +3,7 @@ import PageContainer from "../components/PageContainer";
 import TopBar from "../components/TopBar";
 import Progress from "../components/Progress";
 import Grass from "../components/Grass";
+import Entities from "../components/Entities";
 import ProjectBg from "../assets/background_option_1.png";
 import DefaultGrass from "../assets/grass.png";
 
@@ -11,6 +12,7 @@ export default function Project(){
         <PageContainer background={ProjectBg}>
             <TopBar health={2} level={9} project="Papa Jow"/>
             <Progress percentage={50} />
+            <Entities project_id={1} />
             <Grass img={DefaultGrass} mode={'hard-light'}/>
         </PageContainer>
     )
