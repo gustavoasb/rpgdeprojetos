@@ -8,7 +8,7 @@ export default function Entities({ project_id }) {
   return (
     <EntitiesContainer>
       <Players />
-      <Boss name={`O'rrc`} img={BossImg} />
+      <Boss name={`O'rrc`} img={BossImg} percentage={67}/>
     </EntitiesContainer>
   );
 }
