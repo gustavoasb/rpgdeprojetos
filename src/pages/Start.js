@@ -11,7 +11,8 @@ export default function Start() {
   let last_step = 6;
   let history = useHistory()
 
-  function handleStep() {
+  function handleStep(e) {
+      e.preventDefault()
     if (step !== last_step) {
       setStep(step + 1);
     } else {
