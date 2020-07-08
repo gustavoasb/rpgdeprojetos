@@ -6,7 +6,7 @@ import Player from './Player'
 export default function Players(){
     return(
         <PlayersContainer>
-            <Player name={'Mayara'} img={PlayerImg} />
+            {[...Array(4)].map((item) => <Player name={'Mayara'} img={PlayerImg} />) }
         </PlayersContainer>
     )
 }
