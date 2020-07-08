@@ -4,15 +4,18 @@ import PageContainer from "../components/PageContainer";
 import { SpecialText } from "../components/PageContainer/styles";
 import Box from "../components/Box";
 import Skip from "../components/Skip";
+import { useHistory } from 'react-router-dom'
 
 export default function Start() {
   const [step, setStep] = useState(0);
   let last_step = 6;
+  let history = useHistory()
 
   function handleStep() {
     if (step !== last_step) {
       setStep(step + 1);
     } else {
+        history.push('/projetos')
     }
   }
 
