@@ -3,7 +3,10 @@ import styled from 'styled-components'
 export const GrassContainer = styled.div`
     background-image: ${props => `url(${props.img})`};
     background-repeat: repeat-x;
-    height: 10%;
+    height: 10vh;
+    @media only screen and (max-width: 800px) {
+        height: 5vh;
+    }
     width: 100vw;
 `
 
@@ -15,4 +18,7 @@ export const GrassOverlay = styled.div`
     height: 10vh;
     bottom: 0;
     width: 100vw;
+    @media only screen and (max-width: 800px) {
+        height: 5vh;
+    }
 `

@@ -6,4 +6,7 @@ export const BossHPContainer = styled.div`
     background: ${props => `linear-gradient(90deg, #ff0000 ${props.percentage}%, black,gray ${props.percentage+1}%)`};
     border: 1px solid black;
     margin-bottom: 1rem;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+    }
 `
